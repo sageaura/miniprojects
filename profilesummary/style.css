@@ -16,7 +16,7 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
-      background-color: #caf0f8;
+      background-color: #dfe7fd;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -25,7 +25,7 @@
 .universe h1 {
       position: absolute;
       top: 3.5em;
-      color: #caf0f8;
+      color: #e4c1f9;
       letter-spacing: 3px;
 }
 
@@ -35,6 +35,63 @@
       justify-content: center;
       align-items: center;
       height: 60%;
+      padding: 0;
 }
 
-.profileCard {}
+form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.search-bar {
+      padding: 1.8em;
+      margin: 1em;
+      width: 20rem;
+      border: 3px solid #7678ed;
+      border-radius: 1rem;
+}
+
+::placeholder {
+      font-size: 1.8em;
+      text-align: center;
+}
+
+button {
+      padding: .8em;
+      background-color: #e4c1f9;
+      border: 2px solid #e4c1f9;
+      border-radius: 1rem;
+      transition: all 1s ease-in-out;
+}
+
+button:hover {
+      background-color: #84dcc6;
+      border: #84dcc6;
+}
+
+.infoResult {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+.infoResult p {
+      font-size: medium;
+}
+
+img {
+border-radius: 1rem;
+}
+
+.searchAgain {
+      position: absolute;
+      top: 55em;
+}
+
+.searchAgain button {
+      padding: 1em 2em;
+      font-size: 1.3em;
+      font-weight: 500;
+}

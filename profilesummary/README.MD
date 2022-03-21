@@ -6,6 +6,8 @@ Originally, I planned to rewrite a previous code snippet I had from another proj
 
 For the final code I used a guide on youtube from https://www.youtube.com/watch?v=0Kfwbays58g and put the code in an if statement to be more defensive 
 
-I added my own styling but relied heavily on the youtube tutorial since I struggled with my previous attempt at refactoring a code used for another project
+I added other things like my own styling, links and made adjustments accordingly with JS by removing or adding event listeners, making the search bar disappear (https://www.codegrepper.com/code-examples/html/search+field+hide+and+show+in+js) and search again button etc. Though I relied on the youtube tutorial since I struggled with my previous attempt, I do understand the whole code and concept behind
 
-I understand I used another programmers code in full, I still understand every element of the code and what it does
+I struggled with the repos link, instead it goes to the api link haha
+
+Thank you !

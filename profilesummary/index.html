@@ -18,9 +18,8 @@
                         <form action="/madeuppage.php">
                               <input class="search-bar" type="text" name="username" placeholder="GitHub Username"
                                     id="gusername">
-
-                              <button class="searchbtn" id="btn" type="button"><i class="fas fa-search-location fa-2x"
-                                          style="color: #48cae4;"></i></button>
+                              <button class="searchbtn" onclick="toggleSearch()" id="btn" type="button"><i class="fas fa-search fa-4x"
+                                          style="color: #7678ed;"></i></button>
                   </div>
                   </form>
 
@@ -30,6 +29,17 @@
 
                         </div>
                   </div>
+
+                  <div class="searchAgain">
+                        <a href="index.html"><button class="searchAgainBtn" id="btnAgain" type="button">Search Again</button></a>
+
+
+
+                  <!-- <div class="searchAgain">
+                        <button class="searchAgainBtn" onclick="toggleSearchAgain()" id="btnAgain" type="button">Search Again</button>
+                  </div> -->
+
+
 
                   <!-- <div class="profileSum">
                         <h2 class="name">GitHub Username</h2>

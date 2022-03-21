@@ -6,49 +6,47 @@ if (profileCard) {
       document.getElementById('btn').addEventListener('click', () => {
             let username = document.getElementById('gusername').value
 
-            let url = 'https://api.github.com/users/' + username
+            let url = `https://api.github.com/users/${username}`
 
             fetch(url).then(res => res.json()).then(data => {
+
                   if (data.message) {
                         document.getElementById('info').innerHTML =
                               `<h3>Github profile not found, please try again</h3>`
                   } else {
                         console.log(data)
                         document.getElementById('info').innerHTML =
-                              `<img src="${data.avatar_url}"
-                              style="width:70%">
-                              <h2>${data.login}</h2>
-                              <h3>${data.name}</h3>
-                              <p>${data.public_repos}</p>
-                              <p>${data.repos_url}</p>
-                              <p>${data.html_url}</p>                        
-                        `
+                              `
+                              <img src="${data.avatar_url}"
+                              style="width:40%">
+                              <h2>Username: ${data.login}</h2><br>
+                              <h3>Name: ${data.name}</h3><br>
+                              <p>Repos: ${data.public_repos}</p><br>
+                              <p>${username}'s repos: <a href="${data.repos_url}">${data.repos_url}</a></p><br>
+                              <p>${username}'s profile: <a href="${data.html_url}">${data.html_url}</a></p>                        
+                              `
                   }
             }).catch(e => {
                   console.log(e)
             })
       })
+
+      function toggleSearch() {
+            let x = document.getElementById("gusername");
+            let y = document.getElementById("btn");
+
+            if (x.style.display === "none") {
+                  x.style.display = "block";
+            } else {
+                  x.style.display = "none";
+            }
+            if (y.style.display === "none") {
+                  y.style.display = "block";
+            } else {
+                  y.style.display = "none";
+            }
+      }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
