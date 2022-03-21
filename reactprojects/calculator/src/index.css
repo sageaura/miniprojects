@@ -1,10 +1,10 @@
 /* variables */
 
 :root {
-  --primary: #2a9d8f;
-  ---secondary: #f4a261;
-  --dark: #264653;
-  --light: #e9c46a;
+  --primary: #82adad;
+  ---secondary: #f1b5e8;
+  --dark: #465c69;
+  --light:#d9dbf1;
   --text: #fff
 }
 
@@ -24,6 +24,7 @@ body {
   min-height: 100vh;
   align-items: center;
   justify-content: center;
+  padding: 16px;
 }
 
 .calculator {
@@ -58,4 +59,42 @@ button {
   padding: 16px;
   cursor: pointer;
   transition: 0.4s;
+}
+button:hover {
+  opacity: 0.9;
+}
+
+.operators {
+  display: flex;
+}
+
+.operators button {
+  flex: 1 1 0%;
+  background-color: var(--secondary);
+  font-weight: 900;
+  border: none;
+  outline: none;
+  color: var(--primary);
+  font-size: 20px;
+  padding: 16px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.operators button:hover {
+  opacity: 0.9;
+  color: #a2d2ff;
+  background-color: #264653;
+}
+
+.digits {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 700;
+}
+
+.digits button {
+  flex: 1 1 33.3%;
+  max-width: 33.3%;
+  background-color: var(--dark);
 }
