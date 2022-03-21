@@ -12,49 +12,37 @@
 <body>
 
       <div class="universe">
+            <h1>GitHub Profile Search</h1>
             <div class="profileCard">
-                  <h1>GitHub Profile Search</h1>
                   <div class="search">
-                  <form action="/madeuppage.php">
-                        <input class="user-search" type="text" name="username" placeholder="GitHub Username">
+                        <form action="/madeuppage.php">
+                              <input class="search-bar" type="text" name="username" placeholder="GitHub Username"
+                                    id="gusername">
 
-                        <button class="searchbtn" id="btn" type="button"><i class="fas fa-search-location fa-2x"
-                                    style="color: #48cae4;"></i></button>
-                        </div>
+                              <button class="searchbtn" id="btn" type="button"><i class="fas fa-search-location fa-2x"
+                                          style="color: #48cae4;"></i></button>
+                  </div>
                   </form>
 
+
                   <div class="profileSum">
-                        <h2 class="ghName">GitHub Username</h2>
-                        <img src="" alt="" class="profileImg">
-                        <div class="bio"></div>
-                        <div class="ghLink">See full profile here</div>
-                        <div class="numRepos">10</div>
-                        <div class="repoLink">repo link</div>
-                  </div>
-            </div>
-<!-- 
-            <div class="weatherSection">
-                  <div class="weatherbox">
-                        <div class="card">
-                              <div class="search">
-                                    <input type="text" class="search-bar" placeholder="Search">
-                                    <button class="searchbtn"><i class="fas fa-search-location fa-2x"
-                                                style="color: white;"></i></button>
-                              </div>
-                              <div class="weathercard loading">
-                                    <h2 class="city">Weather in London</h2>
-                                    <div class="temp">13°C</div>
-                                    <img src="" alt="" class="icon">
-                                    <div class="description">Cloudy</div>
-                                    <div class="humidity">Humidity: 60%</div>
-                                    <div class="wind">Wind speed: 6.2 km/h</div>
-                              </div>
+                        <div class="infoResult" id="info">
+
                         </div>
                   </div>
+
+                  <!-- <div class="profileSum">
+                        <h2 class="name">GitHub Username</h2>
+                        <img src="" alt="" class="avatar_url">
+                        <div class="bio"></div>
+                        <div class="url">See full profile here</div>
+                        <div class="public_repos">10</div>
+                        <div class="repos_url">repo link</div>
+                  </div> -->
             </div>
-<!--  -->
       </div>
       <script src="./script.js"></script>
       <script src="https://kit.fontawesome.com/fde10a761c.js"></script>
 </body>
+
 </html>

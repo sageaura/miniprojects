@@ -22,6 +22,19 @@
       align-items: center;
 }
 
-.profileCard {
-      
+.universe h1 {
+      position: absolute;
+      top: 3.5em;
+      color: #caf0f8;
+      letter-spacing: 3px;
 }
+
+.profileCard {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 60%;
+}
+
+.profileCard {}
