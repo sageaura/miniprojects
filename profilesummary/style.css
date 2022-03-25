@@ -91,6 +91,9 @@ border-radius: 1rem;
 }
 
 .searchAgain button {
+      position: absolute;
+      top: 30rem;
+      left: -40px;
       padding: 1em 2em;
       font-size: 1.3em;
       font-weight: 500;
